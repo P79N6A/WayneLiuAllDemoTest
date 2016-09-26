@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "WayneLiuAllDemoTest"
   s.version      = "0.0.1"
-  s.summary      = "用来存放我个人的平时使用的demo"
+  s.summary      = "for my demo"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
