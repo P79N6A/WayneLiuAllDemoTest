@@ -13,6 +13,8 @@
 - (IBAction)add:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *time;
 
+@property (copy ,nonatomic)NSMutableDictionary *muDict;
+
 @property (nonatomic,assign)float timeNumber;
 
 @property(nonatomic,strong)UIWebView *webview;
@@ -56,9 +58,9 @@
     
     
 //    [self dingshiqi];
-    [self testForObjectAndValue];
-   
-    
+//    [self testForObjectAndValue];
+    [self testForStrongAndCopy];
+      NSLog(@"%@ ---- %p",self.muDict,self.muDict);
     
     
     
@@ -128,7 +130,26 @@
 
 }
 
+
+/**
+ *  @author lqc
+ *
+ *  测试strong和copy 属性
+ */
+-(void)testForStrongAndCopy{
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+    [dict setValue:@"1" forKey:@"first"];
+    self.muDict = dict;
+    NSLog(@"%@ ———— %p",self.muDict,self.muDict);
+    [dict setValue:@"2" forKey:@"second"];
+    self.muDict = dict;
+    NSLog(@"%@ ---- %p",self.muDict,self.muDict);
+    
+}
+
+
 - (void)update{
+    
     self.time.text =[NSString stringWithFormat:@"%f", self.timeNumber++];
 //   self.timeNumber++ =  [self.timeNumber floatValue]++;
 }
