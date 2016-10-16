@@ -15,6 +15,7 @@
 		0A4689B91D55EBA4003252E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4689B71D55EBA4003252E4 /* LaunchScreen.storyboard */; };
 		0A4689C41D55EBA4003252E4 /* controlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4689C31D55EBA4003252E4 /* controlTests.m */; };
 		0A4689CF1D55EBA4003252E4 /* controlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4689CE1D55EBA4003252E4 /* controlUITests.m */; };
+		0A59095E1DB0D06A006C9BD3 /* ContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A59095D1DB0D06A006C9BD3 /* ContextView.m */; };
 		97DE68E55C94A6AFA68C8845 /* libPods-control.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAEE50E47CFC2724944B12A /* libPods-control.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		0A4689CA1D55EBA4003252E4 /* controlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = controlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4689CE1D55EBA4003252E4 /* controlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = controlUITests.m; sourceTree = "<group>"; };
 		0A4689D01D55EBA4003252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A59095C1DB0D06A006C9BD3 /* ContextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextView.h; sourceTree = "<group>"; };
+		0A59095D1DB0D06A006C9BD3 /* ContextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextView.m; sourceTree = "<group>"; };
 		1CAEE50E47CFC2724944B12A /* libPods-control.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-control.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBB736C75D1A24789EC5E02 /* Pods-control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-control/Pods-control.debug.xcconfig"; sourceTree = "<group>"; };
 		E1BE4F466196F2ABACA8DA73 /* Pods-control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-control.release.xcconfig"; path = "Pods/Target Support Files/Pods-control/Pods-control.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				0A4689B71D55EBA4003252E4 /* LaunchScreen.storyboard */,
 				0A4689BA1D55EBA4003252E4 /* Info.plist */,
 				0A4689A91D55EBA4003252E4 /* Supporting Files */,
+				0A59095C1DB0D06A006C9BD3 /* ContextView.h */,
+				0A59095D1DB0D06A006C9BD3 /* ContextView.m */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A59095E1DB0D06A006C9BD3 /* ContextView.m in Sources */,
 				0A4689B11D55EBA4003252E4 /* ViewController.m in Sources */,
 				0A4689AE1D55EBA4003252E4 /* AppDelegate.m in Sources */,
 				0A4689AB1D55EBA4003252E4 /* main.m in Sources */,
